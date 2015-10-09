@@ -1,0 +1,64 @@
+I have initialized this repository using git init
+
+You can tell whether a repository has been initialized in any
+directory by typing ls -a and searching for a .git file
+
+Once I initialize a repository I can check the commit history using
+git log. If I do this I'll get the output
+
+			fatal: bad default revision 'HEAD'
+
+HEAD is git's word for the current commit so git is basically telling
+me that I have no commits. I can check this by typing git status which
+returns the files that have changed since the last commit. Right now
+its prints out 
+	
+			On branch master
+
+			Initial commit
+
+So clearly the only commit has been the initalization of the git.
+Git status is also outputing the message 
+
+		Changes to be committed:
+		  (use "git rm --cached <file>..." to unstage)
+
+			new file:   file1.txt
+
+The message is saying that I have added a file, 'file1.txt' to the staging area to be committed. This message is followed by another message.
+
+		Changes not staged for commit:
+		  (use "git add <file>..." to update what will be committed)
+		  (use "git checkout -- <file>..." to discard changes in working directory)
+
+			modified:   file1.txt
+
+This message is stating that I have modified the file, 'file1.txt' since 
+adding it to the staging area. It is warning me that if I checkout 
+another branch my changes will be lost. If I add it to the next commit 
+then my changes will be saved. 
+
+As a test I'm going to see what happens if I commit the new file and 
+type git status. Then I'll see what happens if I make changes to it.
+If all goes as expected, the git status will initially output the 
+message. "Changes to be committed" followed by the file name, and
+will not output the message "Changes not staged for commit"
+
+So it all went expected so far. Here is the output of git status after
+adding the changes in file1.txt to the staging area. 
+
+				On branch master
+
+				Initial commit
+
+				Changes to be committed:
+				  (use "git rm --cached <file>..." to unstage)
+
+					new file:   file1.txt
+
+Now if I type in git status I should get the errors.
+
+
+
+
+
