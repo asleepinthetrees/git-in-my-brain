@@ -150,5 +150,8 @@ Now I'm going to try merging knowledge into master. lets see what happens
 . Holy shit I just realized that sublime uses autocomplete on english
 words. This is absurd.
 
+Alright so I completed the merge. Now I'm writing this in master again. 
+However I've noticed that the branch knowledge still exists. Lets see
+if this text will appear over there. I suspect it will not.
 
 
