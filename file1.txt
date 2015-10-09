@@ -104,6 +104,51 @@ directory that have not been added to the staging area.
 
 Now I am going to continue this file on the branch knowledge. Later I may try to merge the two branches. We'll see what happens on this line.
 
+If the master is showing (master *+) then the * is representing a change
+between the local directory and the staging area and the + represents a 
+change between the staging area and the repository.
+
+Now on to branches. Branches are basically splits in your projects file
+history. I'm going to try initializing a branch called knowledge. 
+Hopefully I will be able to play with what appears in each branch.
+
+Here is a statement that should only appear in the knowledge branch.
+Turns out more than just this statement appear on the knowledge branch.
+Basically anything I didn't commit to the master branch before checking
+out the knowledge branch, will not be seen on the master branch. 
+
+However, when I check out branches, it only affects files that are in 
+that branch. Lets say I add a file to knowledge. I wonder what will
+happen when I switch back to the master branch.
+
+Alright so I performed a small experiment just now to see what would 
+happen. When I created a file trackedbyknowledge.txt then added
+and committed it to the knowledge branch, it no longer showed up
+when I switched to the master branch. However, when I created a file
+createdinknowledgebutnottracked.txt the file did show up in my master
+branch. This leads me to believe that any file that is both in my
+local directory and part of a git repository, is going to be considered
+part of that git repository first, and in my local directory second.
+However, if something is in my local directory and is not part of the
+repository, it will be unaffected by git. This is all good so far. 
+
+Now just to be a hardo, lets see what would happen if I create a file in
+knowledge and add it to staging. then switch to master and switch back 
+to knowledge. 
+
+This is interesting. So the staging area carries over between branches.
+Therefore the staging area acts like a data buffer, and can hold data 
+even if I'm switching between branches.
+
+Lets see if this actually works. I'm going to add the paragraphs I just wrote to staging and then see what happens to them when I switch to master.
+
+Apparently my changes to file1.txt would be overwritten by checking
+out to master. Could this be a merge conflict issue? I'm gonna
+go back to udacity and find out.
+
+Now I'm going to try merging knowledge into master. lets see what happens
+. Holy shit I just realized that sublime uses autocomplete on english
+words. This is absurd.
 
 
 
