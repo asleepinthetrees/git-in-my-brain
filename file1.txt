@@ -132,4 +132,19 @@ Now just to be a hardo, lets see what would happen if I create a file in
 knowledge and add it to staging. then switch to master and switch back 
 to knowledge. 
 
+This is interesting. So the staging area carries over between branches.
+Therefore the staging area acts like a data buffer, and can hold data 
+even if I'm switching between branches.
+
+Lets see if this actually works. I'm going to add the paragraphs I just wrote to staging and then see what happens to them when I switch to master.
+
+Apparently my changes to file1.txt would be overwritten by checking
+out to master. Could this be a merge conflict issue? I'm gonna
+go back to udacity and find out.
+
+Now I'm going to try merging knowledge into master. lets see what happens
+. Holy shit I just realized that sublime uses autocomplete on english
+words. This is absurd.
+
+
 
