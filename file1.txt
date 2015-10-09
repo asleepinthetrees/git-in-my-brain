@@ -100,7 +100,15 @@ a (master +) sign, then the staging area is ahead of the repository.
 If the master is showing a (master *) then there are changes in the local
 directory that have not been added to the staging area.
 
-git diff
+If the master is showing (master *+) then the * is representing a change
+between the local directory and the staging area and the + represents a 
+change between the staging area and the repository.
+
+Now on to branches. Branches are basically splits in your projects file
+history. I'm going to try initializing a branch called knowledge. 
+Hopefully I will be able to play with what appears in each branch.
+
+Here is a statement that should only appear in the knowledge branch.
 
 
 
