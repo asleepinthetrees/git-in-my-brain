@@ -117,6 +117,19 @@ However, when I check out branches, it only affects files that are in
 that branch. Lets say I add a file to knowledge. I wonder what will
 happen when I switch back to the master branch.
 
+Alright so I performed a small experiment just now to see what would 
+happen. When I created a file trackedbyknowledge.txt then added
+and committed it to the knowledge branch, it no longer showed up
+when I switched to the master branch. However, when I created a file
+createdinknowledgebutnottracked.txt the file did show up in my master
+branch. This leads me to believe that any file that is both in my
+local directory and part of a git repository, is going to be considered
+part of that git repository first, and in my local directory second.
+However, if something is in my local directory and is not part of the
+repository, it will be unaffected by git. This is all good so far. 
 
+Now just to be a hardo, lets see what would happen if I create a file in
+knowledge and add it to staging. then switch to master and switch back 
+to knowledge. 
 
 
