@@ -109,6 +109,13 @@ history. I'm going to try initializing a branch called knowledge.
 Hopefully I will be able to play with what appears in each branch.
 
 Here is a statement that should only appear in the knowledge branch.
+Turns out more than just this statement appear on the knowledge branch.
+Basically anything I didn't commit to the master branch before checking
+out the knowledge branch, will not be seen on the master branch. 
+
+However, when I check out branches, it only affects files that are in 
+that branch. Lets say I add a file to knowledge. I wonder what will
+happen when I switch back to the master branch.
 
 
 
